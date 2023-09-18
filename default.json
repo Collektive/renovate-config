@@ -64,6 +64,13 @@
     {
       "matchDepNames": "ubuntu github actions runner",
       "extractVersion": "^ubuntu(?<version>\\d\\d)\/\\d+.\\.\\d+$"
+    },
+    {
+      "description": "Trigger a patch update on Collektive upgrades",
+      "matchPackagePrefixes": [
+        "it.unibo.collektive"
+      ],
+      "semanticCommitScope": "core-deps"
     }
   ],
   "prConcurrentLimit": 25,
