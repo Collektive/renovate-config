@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>collektive/renovate-config:kotlin"
+  ],
+  "packageRules": [
+    {
+      "description": "Trigger a patch update on Gradle and Kotlin upgrades",
+      "matchPackageNames": [
+        "gradle"
+      ],
+      "semanticCommitScope": "core-deps"
+    }
+  ]
+}
